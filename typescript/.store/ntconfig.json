@@ -1,0 +1,6 @@
+{
+  "atMention": {
+    "default": "https://github.com",
+    "link": "$2/$1"      /* $2: the main domain{default}, $1: the username */
+  },
+}

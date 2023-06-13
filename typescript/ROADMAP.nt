@@ -1,0 +1,38 @@
+- Headers
+[+] #1 header 1
+[+] #2 header 2
+[+] #3 header 3
+[+] #4 header 4
+[+] #5 header 5
+[+] #6 header 6
+
+- Texts
+[+] *bold*
+[+] _italic_
+[ ] =highlight=
+[ ] > block quote
+
+- Lists
+[+] * unordered list
+[+] - ordered list
+    i have not gotten the the pattern 100% :: @in(/lib/defaultRules.ts)
+[ ] [ ] unchecked box
+[ ] [x] checked box
+
+- Codes
+[+] `code`
+[ ] lang`
+    code
+    `
+
+- Links
+[ ] link
+[+] mention
+[ ] image
+
+- Table
+[ ] [header | other]
+[ ]     row | col
+
+- Others
+[+] hr ---
