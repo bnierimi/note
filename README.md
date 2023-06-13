@@ -4,22 +4,22 @@ Note is a lightweight, minimalistic markup language designed for creating and fo
 
 
 ## Elements
-Header
-Bold
-Italic
-Code
-Block Code
-Block Quote
-Link
-Mention
-Image
-Horizontal Line
+- Header
+- Bold
+- Italic
+- Code
+- Block Code
+- Block Quote
+- Link
+- Mention
+- Image
+- Horizontal Line
 
 ## Im
-[ ] rust
-[ ] typescript
-[ ] javascript
-[ ] python
-[ ] go
-[ ] ...
+- [ ] rust
+- [ ] typescript
+- [ ] javascript
+- [ ] python
+- [ ] go
+- [ ] ...
 
