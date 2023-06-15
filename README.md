@@ -9,20 +9,10 @@
 ### Header
 ```note
 #1 header 1
-```
-```note
 #2 header 2
-```
-```note
 #3 header 3
-```
-```note
 #4 header 4
-```
-```note
 #5 header 5
-```
-```note
 #6 header 6
 ```
 
@@ -63,10 +53,10 @@ rust`
 
 ### Mention
 ```note
-/* mention any account */
+/* mention any account -> https://github.com/bnierimi */
 @bnierimi(https://github.com)
 
-/* mention a tcitrogg's account */
+/* mention a tcitrogg's account -> https://tcitrogg.org/bnierimi */
 t/bnierimi
 ```
 
@@ -104,3 +94,4 @@ t/bnierimi
 - [ ] go
 - [ ] ...
 
+yours [bnierimi@tcitrogg](https://github.com/bnierimi)
