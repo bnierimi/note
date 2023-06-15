@@ -1,10 +1,12 @@
 # Note
 `/dev/note`
-Note is a lightweight, minimalistic markup language designed for creating and formatting plain text notes. It was developed as a simplified alternative to more complex markup languages
+
+> Note is a lightweight, minimalistic markup language designed for creating and formatting plain text notes. It was developed as a simplified alternative to more complex markup languages
 
 
 ## Elements
-- Header
+
+### Header
 ```note
 #1 header 1
 ```
@@ -24,22 +26,22 @@ Note is a lightweight, minimalistic markup language designed for creating and fo
 #6 header 6
 ```
 
-- Bold
+### Bold
 ```note
 a *bold* text
 ```
 
-- Italic
+### Italic
 ```note
 an *italic* text
 ```
 
-- Code
+### Code
 ```note
 a short `code`
 ```
 
-- Block Code
+### Block Code
 ```note
 rust`
     // this is a comment
@@ -49,17 +51,17 @@ rust`
 `
 ```
 
-- Block Quote
+### Block Quote
 ```note
 > the blockquote
 ```
 
-- Link
+### Link
 ```note
 [text](link)
 ```
 
-- Mention
+### Mention
 ```note
 /* mention any account */
 @bnierimi(https://github.com)
@@ -68,7 +70,7 @@ rust`
 t/bnierimi
 ```
 
-- Image
+### Image
 ```note
 !image[alt_text](link_to_img)
 
@@ -76,18 +78,18 @@ t/bnierimi
 ![alt_text](link_to_img)
 ```
 
-- Horizontal Line
+### Horizontal Line
 ```note
 ---
 ```
 
-- Unordered List
+### Unordered List
 ```note
 * item 1
 * item 2
 ```
 
-- Ordered List
+### Ordered List
 ```note
 - item 1
 - item 2
