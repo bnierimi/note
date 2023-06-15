@@ -1,0 +1,146 @@
+{
+  "$schema": "https://json.schemastore.org/syntaxes",
+  "name": "Note",
+  "scopeName": "source.notelang",
+  "patterns": [
+    {
+      "include": "#headings"
+    },
+    {
+      "include": "#inline"
+    },
+    {
+      "include": "#emphasis"
+    },
+    {
+      "include": "#links"
+    },
+    {
+      "include": "#media"
+    },
+    {
+      "include": "#codeblocks"
+    }
+  ],
+  "repository": {
+    "headings": {
+      "patterns": [
+        {
+          "name": "heading.level1",
+          "match": "^#1\\s.*$"
+        },
+        {
+          "name": "heading.level2",
+          "match": "^#2\\s.*$"
+        },
+        {
+          "name": "heading.level3",
+          "match": "^#3\\s.*$"
+        },
+        {
+          "name": "heading.level4",
+          "match": "^#4\\s.*$"
+        },
+        {
+          "name": "heading.level5",
+          "match": "^#5\\s.*$"
+        },
+        {
+          "name": "heading.level6",
+          "match": "^#6\\s.*$"
+        },
+      ]
+    },
+    "inline": {
+      "patterns": [
+        {
+          "name": "inline.code",
+          "begin": "\\`",
+          "end": "`",
+        }
+      ]
+    },
+    "emphasis": {
+      "patterns": [
+        {
+          "name": "emphasis.italic",
+          "begin": "\\b_",
+          "end": "_",
+        },
+        {
+          "name": "emphasis.bold",
+          "begin": "\\*",
+          "end": "\\*",
+        }
+      ]
+    },
+    "links": {
+      "patterns": [
+        {
+          "name": "link",
+          "begin": "\\[",
+          "end": "\\]\\(.*\\)",
+          "patterns": [
+            {
+              "name": "link.text",
+              "match": "\\[.*\\]"
+            },
+            {
+              "name": "link.url",
+              "match": "\\(.*\\)"
+            }
+          ]
+        }
+      ]
+    },
+    "media": {
+      "patterns": [
+        {
+          "name": "image",
+          "begin": "(!|!image)[",
+          "end": "\\]\\(.*\\)",
+          "patterns": [
+            {
+              "name": "link.text",
+              "match": "\\[.*\\]"
+            },
+            {
+              "name": "link.url",
+              "match": "\\(.*\\)"
+            }
+          ]
+        }
+      ]
+    },
+    "codeblock": {
+      "patterns": [
+        {
+          "name": "link",
+          "begin": "([a-zA-Z]+)\\`",
+          "end": "(.*)\\`",
+          "patterns": [
+            {
+              "name": "codeblock.langname",
+              "match": "\\([a-zA-Z]+\\)"
+            },
+            {
+              "name": "codeblock.content",
+              "match": "\\`([\\s\\S]*?)\\`"
+            }
+          ]
+        }
+        // {
+        //   "name": "custom.codeblock",
+        //   "begin": "`([\\s\\S]*?)`",
+        //   "end": "`",
+        //   "patterns": [
+        //     {
+        //       "name": "custom.codeblock.content",
+        //       "match": ".*"
+        //     }
+        //   ]
+        // }
+      ]
+    }
+  }
+}

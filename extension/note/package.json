@@ -12,6 +12,20 @@
   "activationEvents": [],
   "main": "./dist/extension.js",
   "contributes": {
+    "languages": [
+      {
+        "id": "notelang",
+        "extensions": [".nt", ".note"],
+        "aliases": ["Note"]
+      }
+    ],
+    "grammars": [
+      {
+        "language": "Note",
+        "scopeName": "source.notelang",
+        "path": "./syntaxes/notelang.tmLanguage.json"
+      }
+    ],
     "commands": [
       {
         "command": "note.helloWorld",
